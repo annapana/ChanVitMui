@@ -59,10 +59,13 @@
         }
 
         .content-right {
-            width: 100%;
+            width: 100%; /* Adjusted width to 70% of parent container */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             background: #ffffff; /* Added background color to content-right */
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
         }
 
         .video-iframe {
@@ -107,10 +110,13 @@
 
     <div class="content-container">
         <div class="content-right">
-            <!-- The iframe is moved outside of .content-right -->
+            <video width="70%" height="auto"   justify-content= "center" controls autoplay loop unmuted> 
+
+                <source src="DATA\thao tac 7.mp4" type="video/mp4">
+        
+              </video> 
         </div>
-        <iframe class="video-iframe" src="3D view\Data\3dview.html" frameborder="0" scrolling="no"
-            style="overflow:hidden;"></iframe>
+       
     </div>
 
 </body>
